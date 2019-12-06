@@ -224,7 +224,7 @@ The dep group is expanded before locating and running code, in which only the ex
 
 ![Example of Dep Group Expansion](dep-group-expansion.png)
 
-In v0.19.0, the lock script secp256k1 is split into code cell and data cell. The code cell loads the data cell via `cell_deps`. So if a transaction needs to unlock a cell locked by secp256k1, it must add both cells in `cell_deps`. With dep group, the transaction only needs the dep group.
+In v0.25.0, the lock script secp256k1 is split into code cell and data cell. The code cell loads the data cell via `cell_deps`. So if a transaction needs to unlock a cell locked by secp256k1, it must add both cells in `cell_deps`. With dep group, the transaction only needs the dep group.
 
 There are two reasons why we split the secp256k1 cell.
 
